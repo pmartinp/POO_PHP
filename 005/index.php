@@ -7,7 +7,19 @@ include_once("005EmpleadoSueldo.php");
 
 $empleado = new Empleado("Jesus", "de Nazaret");
 
-echo $empleado->getNombreCompleto()." ".$empleado->debePagarImpuestos();
+echo $empleado->getNombreCompleto()."<br>";
+if ($empleado->debePagarImpuestos()) {
+    echo "Debe pagar impuestos";
+} else {
+    echo "No debe pagar impuestos";
+}
+
 $empleado->setSueldo_tope(900);
-echo "<br>";
-echo $empleado->getNombreCompleto()." ".$empleado->debePagarImpuestos();
+echo "<br><br>";
+
+echo $empleado->getNombreCompleto()."<br>";
+if ($empleado->debePagarImpuestos()) {
+    echo "Debe pagar impuestos";
+} else {
+    echo "No debe pagar impuestos";
+}
