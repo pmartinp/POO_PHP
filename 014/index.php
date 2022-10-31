@@ -34,3 +34,5 @@ echo "<br><br>";
 echo $empresa->toJSON();
 echo "<br><br>";
 echo $empleado->toSerialize();
+echo "<br><br>";
+echo $gerente->toJSON();

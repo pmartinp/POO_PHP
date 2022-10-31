@@ -56,7 +56,7 @@ class Empleado extends Persona
     }
 
     /**
-     * Get the value of sueldo_tope
+     * Get the value of sueldoTope
      */
     public function getSueldoTope()
     {
@@ -64,7 +64,7 @@ class Empleado extends Persona
     }
 
     /**
-     * Set the value of sueldo_tope
+     * Set the value of sueldoTope
      *
      * @return  self
      */

@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 include_once("012Trabajador.php");
 
@@ -42,7 +43,7 @@ class Gerente extends Trabajador
     public static function toHtml(Persona $p): string
     {
         if ($p instanceof Empleado) {
-            $res = parent::toHtml($p). "<p>Sueldo: " . $p->calcularSueldo() . "€</p>";
+            $res = parent::toHtml($p) . "<p>Sueldo: " . $p->calcularSueldo() . "€</p>";
 
             $res = $res . "<ol>";
             foreach ($p->getNumTelefonos() as $x => $value) {
@@ -59,7 +60,7 @@ class Gerente extends Trabajador
         $res = parent::__toString() . "<p>Sueldo: " . $this->calcularSueldo() . "€</p>";
 
         $res = $res . "<ol>";
-        foreach ($this->numTelefonos as $x => $value) {
+        foreach ($this->getnumTelefonos() as $x => $value) {
             $res = $res . "<li>" . $value . "</li>";
         }
         $res = $res . "</ol>";

@@ -6,7 +6,7 @@ include_once("012Persona.php");
 abstract class Trabajador extends Persona
 {
     protected static float $sueldoTope = 3333;
-    protected $numTelefonos = [];
+    private $numTelefonos = [];
 
     /**
      * Get the value of numTelefonos
@@ -29,7 +29,7 @@ abstract class Trabajador extends Persona
     }
 
     /**
-     * Get the value of sueldo_tope
+     * Get the value of sueldoTope
      */
     public function getSueldoTope()
     {
@@ -37,7 +37,7 @@ abstract class Trabajador extends Persona
     }
 
     /**
-     * Set the value of sueldo_tope
+     * Set the value of sueldoTope
      *
      * @return  self
      */

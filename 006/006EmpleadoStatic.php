@@ -71,7 +71,7 @@ class Empleado
     }
 
     /**
-     * Get the value of sueldo_tope
+     * Get the value of sueldoTope
      */
     public function getSueldoTope()
     {
@@ -79,7 +79,7 @@ class Empleado
     }
 
     /**
-     * Set the value of sueldo_tope
+     * Set the value of sueldoTope
      *
      * @return  self
      */

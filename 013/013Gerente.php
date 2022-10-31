@@ -59,7 +59,7 @@ class Gerente extends Trabajador
         $res = parent::__toString() . "<p>Sueldo: " . $this->calcularSueldo() . "€</p>";
 
         $res = $res . "<ol>";
-        foreach ($this->numTelefonos as $x => $value) {
+        foreach ($this->getnumTelefonos() as $x => $value) {
             $res = $res . "<li>" . $value . "</li>";
         }
         $res = $res . "</ol>";
